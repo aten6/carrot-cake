@@ -1,0 +1,84 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Carrot Cake Recipe</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    function toggleSection(id) {
+      const section = document.getElementById(id);
+      section.classList.toggle('hidden');
+    }
+  </script>
+</head>
+<body class="bg-orange-50 text-gray-800 font-sans p-4 sm:p-10">
+  <div class="max-w-3xl mx-auto bg-white shadow-xl rounded-2xl p-6 sm:p-10">
+    <h1 class="text-4xl font-bold text-center text-orange-600 mb-2">🥕 Carrot Cake Recipe 🧁</h1>
+    <p class="text-center text-gray-600 mb-6 italic">
+      “For the sweetest baker I know — a little recipe shared with a lot of affection 💛” <br />
+      – from your favorite coder, Nastex 😄
+    </p>
+
+    <img src="carrot-cake-recipe.jpg" alt="Handwritten carrot cake recipe" class="rounded-xl mx-auto mb-6 shadow-md">
+
+    <div>
+      <button onclick="toggleSection('ingredients')" class="w-full bg-orange-200 hover:bg-orange-300 text-orange-800 font-semibold py-2 px-4 rounded mb-3 transition duration-300">
+        🍰 Show/Hide Ingredients
+      </button>
+      <div id="ingredients" class="hidden">
+        <h2 class="text-2xl font-semibold mb-2">Ingredients</h2>
+        <ul class="list-disc list-inside space-y-1">
+          <li>2 eggs (room temperature)</li>
+          <li>200g powdered sugar</li>
+          <li>150ml oil</li>
+          <li>200g shredded carrot</li>
+          <li>50g walnuts (finely chopped)</li>
+          <li>75g pineapple (canned or fresh, finely chopped)</li>
+          <li>50g shredded coconut</li>
+          <li>200g flour</li>
+          <li>½ tsp baking powder</li>
+          <li>1 tsp baking soda</li>
+          <li>1 tsp cinnamon</li>
+          <li>Pinch of salt</li>
+        </ul>
+
+        <h3 class="text-xl font-semibold mt-4">Cream</h3>
+        <ul class="list-disc list-inside space-y-1">
+          <li>125g Philadelphia cream cheese</li>
+          <li>50g soft butter</li>
+          <li>200g powdered sugar</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="mt-6">
+      <button onclick="toggleSection('preparation')" class="w-full bg-teal-200 hover:bg-teal-300 text-teal-800 font-semibold py-2 px-4 rounded mb-3 transition duration-300">
+        🍽️ Show/Hide Preparation
+      </button>
+      <div id="preparation" class="hidden">
+        <h2 class="text-2xl font-semibold mb-2">Preparation</h2>
+        <ol class="list-decimal list-inside space-y-1">
+          <li>Beat the eggs until the volume doubles.</li>
+          <li>Add sugar and oil, and keep mixing.</li>
+          <li>Fold in carrots, pineapple, walnuts, and coconut.</li>
+          <li>Preheat oven to 150°C (300°F).</li>
+          <li>Add flour, baking powder, baking soda, cinnamon, and salt. Mix well.</li>
+          <li>Pour into a greased pan and bake for 1 hour.</li>
+          <li>Mix cream ingredients and chill for 15 minutes.</li>
+          <li>Let cake cool completely. Slice in half.</li>
+          <li>Spread some cream in the middle, sandwich the layers, then frost the top.</li>
+        </ol>
+      </div>
+    </div>
+
+    <p class="mt-4 text-sm italic text-gray-600">
+      PS: I’ll bake it with you one day if you promise not to judge my skills too harshly 😅
+    </p>
+
+    <footer class="text-center text-sm text-gray-500 mt-8">
+      © 2025 – With love and code 💻 + 🍰 from Nastex to Billi
+    </footer>
+  </div>
+</body>
+</html>
